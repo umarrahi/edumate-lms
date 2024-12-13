@@ -24,7 +24,6 @@
 /* Convert to Rem start */
 /* Convert to Rem End */
 /* ======================== Functions Css End ======================= */
-/* ======================== Functions Css End ======================= */
 /* Font Family*/
 /* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"); */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Nastaliq+Urdu:wght@400..700&display=swap');
@@ -238,6 +237,16 @@
 /* Media Breakpoint for Each Device Start */
 /* Media Breakpoint for Each Device End */
 /* ============================ Mixins Css End ============================ */
+
+/* =========== Custom Css Start (Umar) =========== */
+
+.st-details-body {
+    padding: 20px;
+    
+}
+
+/* =========== Custom Css End (Umar) =========== */
+
 /* ================================= Button Css Start =========================== */
 .btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
     color: none;

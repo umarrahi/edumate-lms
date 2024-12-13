@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
-    <title> Student Details | Edmate LMS </title>
+    <title> Student Details - Edmate SMS</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/logo/favicon.png">
     <!-- Bootstrap -->
@@ -512,8 +512,6 @@
             </div>
         </div>
 
-
-
         <div class="dashboard-body">
 
             <div class="breadcrumb-with-buttons mb-24 flex-between flex-wrap gap-8">
@@ -523,7 +521,7 @@
                         <li><a href="index.html" class="text-gray-200 fw-normal text-15 hover-text-main-600">Home</a>
                         </li>
                         <li> <span class="text-gray-500 fw-normal d-flex"><i class="ph ph-caret-right"></i></span> </li>
-                        <li><span class="text-main-600 fw-normal text-15">Students</span></li>
+                        <li><span class="text-main-600 fw-normal text-15">Students Details</span></li>
                     </ul>
                 </div>
                 <!-- Breadcrumb End -->
@@ -558,93 +556,11 @@
             </div>
 
 
-            <div class="row">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Default Datatable</h4>
-                            <p class="card-title-desc">DataTables has most features enabled by
-                                default, so all you need to do to use it with your own tables is to call
-                                the construction function: <code>$().DataTable();</code>.
-                            </p>
-                        </div>
-                        <div class="card-body">
-
-                            <table id="datatable" class="table table-bordered dt-responsive  nowrap w-100">
-                                <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Position</th>
-                                    <th>Office</th>
-                                    <th>Age</th>
-                                    <th>Start date</th>
-                                    <th>Salary</th>
-                                </tr>
-                                </thead>
-
-
-                                <tbody>
-                                <tr>
-                                    <td>Tiger Nixon</td>
-                                    <td>System Architect</td>
-                                    <td>Edinburgh</td>
-                                    <td>61</td>
-                                    <td>2011/04/25</td>
-                                    <td>$320,800</td>
-                                </tr>
-                                <tr>
-                                    <td>Garrett Winters</td>
-                                    <td>Accountant</td>
-                                    <td>Tokyo</td>
-                                    <td>63</td>
-                                    <td>2011/07/25</td>
-                                    <td>$170,750</td>
-                                </tr>
-                                <tr>
-                                    <td>Ashton Cox</td>
-                                    <td>Junior Technical Author</td>
-                                    <td>San Francisco</td>
-                                    <td>66</td>
-                                    <td>2009/01/12</td>
-                                    <td>$86,000</td>
-                                </tr>
-                                <tr>
-                                    <td>Cedric Kelly</td>
-                                    <td>Senior Javascript Developer</td>
-                                    <td>Edinburgh</td>
-                                    <td>22</td>
-                                    <td>2012/03/29</td>
-                                    <td>$433,060</td>
-                                </tr>
-                                <tr>
-                                    <td>Airi Satou</td>
-                                    <td>Accountant</td>
-                                    <td>Tokyo</td>
-                                    <td>33</td>
-                                    <td>2008/11/28</td>
-                                    <td>$162,700</td>
-                                </tr>
-                                <tr>
-                                    <td>Brielle Williamson</td>
-                                    <td>Integration Specialist</td>
-                                    <td>New York</td>
-                                    <td>61</td>
-                                    <td>2012/12/02</td>
-                                    <td>$372,000</td>
-                                </tr>
-             
-                                
-                                </tbody>
-                            </table>
-
-                        </div>
-                    </div>
-                </div> <!-- end col -->
-            </div>
-            <!-- end row -->
-
-            <div class="card overflow-hidden">
+            <div class="card overflow-hidden st-details-body">
                 <div class="card-body p-0 overflow-x-auto">
+                    <div class="col-12">
+                        <a href="st-add.html" class="btn btn-main rounded-pill py-9"><i class="ph ph-plus"></i> Add Student</a>
+                    </div>
                     <table id="studentTable" class="table table-striped">
                         <thead>
                             <tr>
@@ -654,11 +570,11 @@
                                             id="selectAll">
                                     </div>
                                 </th>
-                                <th class="h6 text-gray-300">Students</th>
+                                <th class="h6 text-gray-300">#</th>
+                                <th class="h6 text-gray-300">Name</th>
                                 <th class="h6 text-gray-300">Email ID</th>
-                                <th class="h6 text-gray-300">Courses</th>
-                                <th class="h6 text-gray-300">Certificates Earned</th>
-                                <th class="h6 text-gray-300">Status</th>
+                                <th class="h6 text-gray-300">Roll No</th>
+                                <th class="h6 text-gray-300">Phone No</th>
                                 <th class="h6 text-gray-300">Actions</th>
                             </tr>
                         </thead>
@@ -670,191 +586,47 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="flex-align gap-8">
-                                        <img src="assets/images/thumbs/student-img1.png" alt=""
-                                            class="w-40 h-40 rounded-circle">
-                                        <span class="h6 mb-0 fw-medium text-gray-300">Jane Cooper</span>
-                                    </div>
-                                </td>
-                                <td>
-                                    <span class="h6 mb-0 fw-medium text-gray-300">example10mail.com</span>
-                                </td>
-                                <td>
-                                    <span class="h6 mb-0 fw-medium text-gray-300">12</span>
-                                </td>
-                                <td>
-                                    <span class="h6 mb-0 fw-medium text-gray-300">10</span>
-                                </td>
-                                <td>
-                                    <span
-                                        class="text-13 py-2 px-8 bg-warning-50 text-warning-600 d-inline-flex align-items-center gap-8 rounded-pill">
-                                        <span class="w-6 h-6 bg-warning-600 rounded-circle flex-shrink-0"></span>
-                                        In Progress
-                                    </span>
-                                </td>
-                                <td>
-                                    <a href="#"
-                                        class="bg-main-50 text-main-600 py-2 px-14 rounded-pill hover-bg-main-600 hover-text-white">View
-                                        More</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="fixed-width">
-                                    <div class="form-check">
-                                        <input class="form-check-input border-gray-200 rounded-4" type="checkbox">
-                                    </div>
+                                    <span class="h6 mb-0 fw-medium text-gray-300">1</span>
                                 </td>
                                 <td>
                                     <div class="flex-align gap-8">
-                                        <img src="assets/images/thumbs/student-img2.png" alt=""
+                                        <img src="assets/images/thumbs/student-img4.png" alt=""
                                             class="w-40 h-40 rounded-circle">
-                                        <span class="h6 mb-0 fw-medium text-gray-300">Guy Hawkins</span>
+                                        <span class="h6 mb-0 fw-medium text-gray-300">Afzal</span>
                                     </div>
                                 </td>
                                 <td>
-                                    <span class="h6 mb-0 fw-medium text-gray-300">example10mail.com</span>
+                                    <span class="h6 mb-0 fw-medium text-gray-300">afzal@gmail.com</span>
                                 </td>
                                 <td>
-                                    <span class="h6 mb-0 fw-medium text-gray-300">18</span>
+                                    <span class="h6 mb-0 fw-medium text-gray-300">101</span>
                                 </td>
                                 <td>
-                                    <span class="h6 mb-0 fw-medium text-gray-300">12</span>
+                                    <span class="h6 mb-0 fw-medium text-gray-300">03483947298</span>
                                 </td>
+                                
                                 <td>
-                                    <span
-                                        class="text-13 py-2 px-8 bg-warning-50 text-warning-600 d-inline-flex align-items-center gap-8 rounded-pill">
-                                        <span class="w-6 h-6 bg-warning-600 rounded-circle flex-shrink-0"></span>
-                                        In Progress
-                                    </span>
-                                </td>
-                                <td>
-                                    <a href="#"
-                                        class="bg-main-50 text-main-600 py-2 px-14 rounded-pill hover-bg-main-600 hover-text-white">View
-                                        More</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="fixed-width">
-                                    <div class="form-check">
-                                        <input class="form-check-input border-gray-200 rounded-4" type="checkbox">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="flex-align gap-8">
-                                        <img src="assets/images/thumbs/student-img2.png" alt=""
-                                            class="w-40 h-40 rounded-circle">
-                                        <span class="h6 mb-0 fw-medium text-gray-300">Jacob Jones</span>
-                                    </div>
-                                </td>
-                                <td>
-                                    <span class="h6 mb-0 fw-medium text-gray-300">example10mail.com</span>
-                                </td>
-                                <td>
-                                    <span class="h6 mb-0 fw-medium text-gray-300">08</span>
-                                </td>
-                                <td>
-                                    <span class="h6 mb-0 fw-medium text-gray-300">05</span>
-                                </td>
-                                <td>
-                                    <span
-                                        class="text-13 py-2 px-8 bg-warning-50 text-warning-600 d-inline-flex align-items-center gap-8 rounded-pill">
-                                        <span class="w-6 h-6 bg-warning-600 rounded-circle flex-shrink-0"></span>
-                                        In Progress
-                                    </span>
-                                </td>
-                                <td>
-                                    <a href="#"
-                                        class="bg-main-50 text-main-600 py-2 px-14 rounded-pill hover-bg-main-600 hover-text-white">View
-                                        More</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="fixed-width">
-                                    <div class="form-check">
-                                        <input class="form-check-input border-gray-200 rounded-4" type="checkbox">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="flex-align gap-8">
-                                        <img src="assets/images/thumbs/student-img1.png" alt=""
-                                            class="w-40 h-40 rounded-circle">
-                                        <span class="h6 mb-0 fw-medium text-gray-300">Ronald Richards</span>
-                                    </div>
-                                </td>
-                                <td>
-                                    <span class="h6 mb-0 fw-medium text-gray-300">example10mail.com</span>
-                                </td>
-                                <td>
-                                    <span class="h6 mb-0 fw-medium text-gray-300">09</span>
-                                </td>
-                                <td>
-                                    <span class="h6 mb-0 fw-medium text-gray-300">01</span>
-                                </td>
-                                <td>
-                                    <span
-                                        class="text-13 py-2 px-8 bg-warning-50 text-warning-600 d-inline-flex align-items-center gap-8 rounded-pill">
-                                        <span class="w-6 h-6 bg-warning-600 rounded-circle flex-shrink-0"></span>
-                                        In Progress
-                                    </span>
-                                </td>
-                                <td>
-                                    <a href="#"
-                                        class="bg-main-50 text-main-600 py-2 px-14 rounded-pill hover-bg-main-600 hover-text-white">View
-                                        More</a>
+                                    <a href="#" class="bg-main-50 text-main-600 py-2 px-14 rounded-pill hover-bg-main-600 hover-text-white">View</a>
+                                    <a href="#" class="bg-warning-50 text-warning-600 py-2 px-14 rounded-pill hover-bg-warning-600 hover-text-white">Edit</a>
+                                    <a href="#" class="bg-danger-50 text-danger-600 py-2 px-14 rounded-pill hover-bg-danger-600 hover-text-white">Delete </a>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="card-footer flex-between flex-wrap">
-                    <span class="text-gray-900">Showing 1 to 10 of 12 entries</span>
-                    <ul class="pagination flex-align flex-wrap">
-                        <li class="page-item active">
-                            <a class="page-link h-44 w-44 flex-center text-15 rounded-8 fw-medium" href="#">1</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link h-44 w-44 flex-center text-15 rounded-8 fw-medium" href="#">2</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link h-44 w-44 flex-center text-15 rounded-8 fw-medium" href="#">3</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link h-44 w-44 flex-center text-15 rounded-8 fw-medium" href="#">...</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link h-44 w-44 flex-center text-15 rounded-8 fw-medium" href="#">8</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link h-44 w-44 flex-center text-15 rounded-8 fw-medium" href="#">9</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link h-44 w-44 flex-center text-15 rounded-8 fw-medium" href="#">10</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-            <!-- Student Details start -->
 
         </div>
-
         <div class="dashboard-footer">
             <div class="flex-between flex-wrap gap-16">
-                <p class="text-gray-300 text-13 fw-normal"> &copy; Copyright Edmate 2024, All Right Reserverd</p>
+                <p class="text-gray-300 text-13 fw-normal"> &copy; Copyright Edmate SMS 2024, All Right Reserverd</p>
                 <div class="flex-align flex-wrap gap-16">
-                    <a href="#"
-                        class="text-gray-300 text-13 fw-normal hover-text-main-600 hover-text-decoration-underline">License</a>
-                    <a href="#"
-                        class="text-gray-300 text-13 fw-normal hover-text-main-600 hover-text-decoration-underline">More
-                        Themes</a>
-                    <a href="#"
-                        class="text-gray-300 text-13 fw-normal hover-text-main-600 hover-text-decoration-underline">Documentation</a>
                     <a href="#"
                         class="text-gray-300 text-13 fw-normal hover-text-main-600 hover-text-decoration-underline">Support</a>
                 </div>
             </div>
         </div>
     </div>
-
 
     <!-- Jquery js -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
@@ -868,11 +640,8 @@
     <script src="assets/js/plyr.js"></script>
     <!-- dataTables -->
     <script src="https://cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
-    <!-- Required datatable js -->
-    <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
     <!-- full calendar -->
-    <script src="assets/js/full-calendar.js"></script>  
+    <script src="assets/js/full-calendar.js"></script>
     <!-- jQuery UI -->
     <script src="assets/js/jquery-ui.js"></script>
     <!-- jQuery UI -->
@@ -882,12 +651,14 @@
     <!-- Calendar Js -->
     <script src="assets/js/calendar.js"></script>
     <!-- jvectormap Js -->
-    <script src="assets/js/jquery-jvectormap-2.0.5.min.js"></script>
+    <script src="assets/js/jquery   -jvectormap-2.0.5.min.js"></script>
     <!-- jvectormap world Js -->
     <script src="assets/js/jquery-jvectormap-world-mill-en.js"></script>
 
     <!-- main js -->
     <script src="assets/js/main.js"></script>
+
+
 
     <script>
 
@@ -951,12 +722,12 @@
 
         // Data Tables
         new DataTable('#studentTable', {
-            searching: false,
+            searching: true,
             lengthChange: false,
-            info: false,   // Bottom Left Text => Showing 1 to 10 of 12 entries
-            paging: false, // Pagination False
+            info: true,   // Bottom Left Text => Showing 1 to 10 of 12 entries
+            paging: true, // Pagination False
             "columnDefs": [
-                { "orderable": false, "targets": [0, 6] } // Disables sorting on the 7th column (index 6)
+                { "orderable": false, "targets": [0, 6] } // Disables sorting on the 7th column (index 5)
             ]
         });
     </script>
