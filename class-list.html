@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
-    <title> Teacher Add | Edmate SMS </title>
+    <title> Student List - Edmate SMS</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/logo/favicon.png">
     <!-- Bootstrap -->
@@ -512,83 +512,105 @@
             </div>
         </div>
 
-
         <div class="dashboard-body">
-            <!-- Breadcrumb Start -->
-            <div class="breadcrumb mb-24">
-                <ul class="flex-align gap-4">
-                    <li><a href="index.html" class="text-gray-200 fw-normal text-15 hover-text-main-600">Home</a></li>
-                    <li> <span class="text-gray-500 fw-normal d-flex"><i class="ph ph-caret-right"></i></span> </li>
-                    <li><span class="text-main-600 fw-normal text-15">Add Teacher</span></li>
-                </ul>
-            </div>
-            <!-- Breadcrumb End -->
 
-            <div class="tab-content" id="pills-tabContent">
-                <!-- Admission Form start -->
-                <div class="tab-pane fade show active" id="pills-details" role="tabpanel"
-                    aria-labelledby="pills-details-tab" tabindex="0">
-                    <div class="card mt-24">
-                        <!-- <div class="card-header border-bottom">
-                            <h4 class="mb-4">Admission Form</h4>
-                            <p class="text-gray-600 text-15">Please fill full out details about yourself.</p>
-                        </div> -->
-                        <div class="card-body">
-                            <form action="#">
-                                <div class="row gy-4">
-                                    <div class="col-sm-6 col-xs-6">
-                                        <label for="" class="form-label mb-8 h6">Full Name</label>
-                                        <input type="text" class="form-control py-11" id=""
-                                            placeholder="Enter Full Name">
-                                    </div>
-                                    <div class="col-sm-6 col-xs-6">
-                                        <label for="" class="form-label mb-8 h6">Gender</label>
-                                        <select id="" class="form-select py-9">
-                                            <option value="1" disabled="Select Gender" selected="">Select Gender
-                                            </option>
-                                            <option value="2">Male</option>
-                                            <option value="2">Female</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-6 col-xs-6">
-                                        <label for="" class="form-label mb-8 h6">Date of Birth</label>
-                                        <input type="date" class="form-control py-11" id="">
-                                    </div>
-                                    <div class="col-sm-6 col-xs-6">
-                                        <label for="" class="form-label mb-8 h6">Joining Date</label>
-                                        <input type="date" class="form-control py-11" id="">
-                                    </div>
-                                    <div class="col-sm-6 col-xs-6">
-                                        <label for="" class="form-label mb-8 h6">Email</label>
-                                        <input type="email" class="form-control py-11" id="" placeholder="Enter Email">
-                                    </div>
-                                    <div class="col-sm-6 col-xs-6">
-                                        <label for="" class="form-label mb-8 h6">Phone Number</label>
-                                        <input type="number" class="form-control py-11" id=""
-                                            placeholder="Enter Phone Number">
-                                    </div>
-                                    <div class="col-sm-6 col-xs-6">
-                                        <label for="" class="form-label mb-8 h6">Address</label>
-                                        <input type="text" class="form-control py-11" id=""
-                                            placeholder="Street, City/State, Country, Postal Code">
-                                    </div>
-                                    <div class="col-sm-6 col-xs-6">
-                                        <label for="" class="form-label mb-8 h6">Profile Picture</label>
-                                        <input type="file" class="form-control py-13" id="">
-                                    </div>
+            <div class="breadcrumb-with-buttons mb-24 flex-between flex-wrap gap-8">
+                <!-- Breadcrumb Start -->
+                <div class="breadcrumb mb-24">
+                    <ul class="flex-align gap-4">
+                        <li><a href="index.html" class="text-gray-200 fw-normal text-15 hover-text-main-600">Home</a>
+                        </li>
+                        <li> <span class="text-gray-500 fw-normal d-flex"><i class="ph ph-caret-right"></i></span> </li>
+                        <li><span class="text-main-600 fw-normal text-15">Students List</span></li>
+                    </ul>
+                </div>
+                <!-- Breadcrumb End -->
 
-                                    <div class="col-12">
-                                        <button type="submit" class="btn btn-main rounded-pill py-9">Add Teacher</button>
-                                    </div>
-                                </div>
-                            </form>
+                <!-- Breadcrumb Right Start -->
+                <div class="flex-align gap-8 flex-wrap">
+                    <div class="position-relative text-gray-500 flex-align gap-4 text-13">
+                        <span class="text-inherit">Sort by: </span>
+                        <div
+                            class="flex-align text-gray-500 text-13 border border-gray-100 rounded-4 ps-20 focus-border-main-600 bg-white">
+                            <span class="text-lg"><i class="ph ph-funnel-simple"></i></span>
+                            <select class="form-control ps-8 pe-20 py-16 border-0 text-inherit rounded-4 text-center">
+                                <option value="1" selected>Popular</option>
+                                <option value="1">Latest</option>
+                                <option value="1">Trending</option>
+                                <option value="1">Matches</option>
+                            </select>
                         </div>
                     </div>
+                    <div
+                        class="flex-align text-gray-500 text-13 border border-gray-100 rounded-4 ps-20 focus-border-main-600 bg-white">
+                        <span class="text-lg"><i class="ph ph-layout"></i></span>
+                        <select class="form-control ps-8 pe-20 py-16 border-0 text-inherit rounded-4 text-center"
+                            id="exportOptions">
+                            <option value="" selected disabled>Export</option>
+                            <option value="csv">CSV</option>
+                            <option value="json">JSON</option>
+                        </select>
+                    </div>
                 </div>
-                <!-- Admission Form End -->
+                <!-- Breadcrumb Right End -->
             </div>
-        </div>
 
+
+            <div class="card overflow-hidden st-list-body">
+                <div class="card-body p-0 overflow-x-auto">
+                    <div class="col-12">
+                        <a href="class-add.html" class="btn btn-main rounded-pill py-9"><i class="ph ph-plus"></i> Add Class</a>
+                    </div>
+                    <table id="studentTable" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th class="fixed-width">
+                                    <div class="form-check">
+                                        <input class="form-check-input border-gray-200 rounded-4" type="checkbox"
+                                            id="selectAll">
+                                    </div>
+                                </th>
+                                <th class="h6 text-gray-300">#</th>
+                                <th class="h6 text-gray-300">Name</th>
+                                <th class="h6 text-gray-300">Class Numeric</th>
+                                <th class="h6 text-gray-300">Teacher Name</th>
+                                <th class="h6 text-gray-300">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="fixed-width">
+                                    <div class="form-check">
+                                        <input class="form-check-input border-gray-200 rounded-4" type="checkbox">
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="h6 mb-0 fw-semibold text-gray-300">1</span>
+                                </td>
+                                <td>
+                                    <div class="flex-align gap-8">
+                                        <span class="h6 mb-0 fw-medium text-gray-300">Matric</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="h6 mb-0 fw-medium text-gray-300">10th</span>
+                                </td>
+                                <td>
+                                    <span class="h6 mb-0 fw-medium text-gray-300">Jafer</span>
+                                </td>
+                                
+                                <td>
+                                    <a href="#" class="bg-main-50 text-main-600 py-2 px-14 rounded-pill hover-bg-main-600 hover-text-white">View</a>
+                                    <a href="#" class="bg-warning-50 text-warning-600 py-2 px-14 rounded-pill hover-bg-warning-600 hover-text-white">Edit</a>
+                                    <a href="#" class="bg-danger-50 text-danger-600 py-2 px-14 rounded-pill hover-bg-danger-600 hover-text-white">Delete </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
         <div class="dashboard-footer">
             <div class="flex-between flex-wrap gap-16">
                 <p class="text-gray-300 text-13 fw-normal"> &copy; Copyright Edmate SMS 2024, All Right Reserverd</p>
@@ -599,7 +621,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- Jquery js -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
@@ -624,12 +645,87 @@
     <!-- Calendar Js -->
     <script src="assets/js/calendar.js"></script>
     <!-- jvectormap Js -->
-    <script src="assets/js/jquery-jvectormap-2.0.5.min.js"></script>
+    <script src="assets/js/jquery   -jvectormap-2.0.5.min.js"></script>
     <!-- jvectormap world Js -->
     <script src="assets/js/jquery-jvectormap-world-mill-en.js"></script>
 
     <!-- main js -->
     <script src="assets/js/main.js"></script>
+
+
+
+    <script>
+
+        // ========================== Export Js Start ==============================
+        document.getElementById('exportOptions').addEventListener('change', function () {
+            const format = this.value;
+            const table = document.getElementById('studentTable');
+            let data = [];
+            const headers = [];
+
+            // Get the table headers
+            table.querySelectorAll('thead th').forEach(th => {
+                headers.push(th.innerText.trim());
+            });
+
+            // Get the table rows
+            table.querySelectorAll('tbody tr').forEach(tr => {
+                const row = {};
+                tr.querySelectorAll('td').forEach((td, index) => {
+                    row[headers[index]] = td.innerText.trim();
+                });
+                data.push(row);
+            });
+
+            if (format === 'csv') {
+                downloadCSV(data);
+            } else if (format === 'json') {
+                downloadJSON(data);
+            }
+        });
+
+        function downloadCSV(data) {
+            const csv = data.map(row => Object.values(row).join(',')).join('\n');
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'students.csv';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+
+        function downloadJSON(data) {
+            const json = JSON.stringify(data, null, 2);
+            const blob = new Blob([json], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'students.json';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+        // ========================== Export Js End ==============================
+
+        // Table Header Checkbox checked all js Start
+        $('#selectAll').on('change', function () {
+            $('.form-check .form-check-input').prop('checked', $(this).prop('checked'));
+        });
+
+        // Data Tables
+        new DataTable('#studentTable', {
+            searching: true,
+            lengthChange: false,
+            info: true,   // Bottom Left Text => Showing 1 to 10 of 12 entries
+            paging: true, // Pagination False
+            "columnDefs": [
+                { "orderable": false, "targets": [0, 5] } // Disables sorting on the 7th column (index 4)
+            ]
+        });
+    </script>
+
 </body>
 
 </html>
