@@ -238,14 +238,17 @@
 /* Media Breakpoint for Each Device End */
 /* ============================ Mixins Css End ============================ */
 
+
 /* =========== Custom Css Start (Umar) =========== */
 
-.st-details-body {
+/* Student list  */
+.st-list-body {
     padding: 20px;
     
-}
+  }
+  
+  /* =========== Custom Css End (Umar) =========== */
 
-/* =========== Custom Css End (Umar) =========== */
 
 /* ================================= Button Css Start =========================== */
 .btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
